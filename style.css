@@ -36,3 +36,13 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: hsl(210, 100%, 45%);
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, dodgerblue, white);
+    padding: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+    min-width: 300px;
+}
