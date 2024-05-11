@@ -53,6 +53,21 @@ function displayWeatherInfo(data) {
     const humidityDisplay = document.createElement("p");
     const descDisplay = document.createElement("p");
     const weatherEmoji = document.createElement("p");
+
+    cityDisplay.textContent = city;
+    tempDisplay.textContent = `${(temp - 273.15).toFixed(1)}°C`;
+    humidityDisplay.textContent = `Humidity: ${humidity}%`;
+    descDisplay.textContent = description;
+
+    cityDisplay.classList.add("cityDisplay");
+    tempDisplay.classList.add("tempDisplay");
+    humidityDisplay.classList.add("humidityDisplay");
+    descDisplay.classList.add("descDisplay");
+
+    card.appendChild(cityDisplay);
+    card.appendChild(tempDisplay);
+    card.appendChild(humidityDisplay);
+    card.appendChild(descDisplay);
 }
 
 function getWeatherEmoji(weatherId) {
