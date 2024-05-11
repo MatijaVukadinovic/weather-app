@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,700&display=swap');
 
 body {
+    color: white;
     font-family: 'Rubik', sans-serif;
     margin: 0;
     display: flex;
@@ -41,7 +42,7 @@ button[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, dodgerblue, white);
+    background: linear-gradient(180deg, dodgerblue, lightskyblue);
     padding: 50px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
