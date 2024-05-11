@@ -1,6 +1,6 @@
-const weatherForm = document.querySelector("weatherForm");
-const cityInput = document.querySelector("cityInput");
-const card = document.querySelector("card");
+const weatherForm = document.querySelector(".weatherForm");
+const cityInput = document.querySelector(".cityInput");
+const card = document.querySelector(".card");
 
 const apiKey = "1873d3f2d461e37268050e10010b0a32";
 
@@ -44,6 +44,9 @@ function displayWeatherInfo(data) {
     const {name: city,
            main: {temp, humidity},
            weather: [{description, id}]} = data;
+    
+    card.textContent = "";
+    card.style.display = "flex";
 
 }
 
