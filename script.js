@@ -6,6 +6,8 @@ const apiKey = "1873d3f2d461e37268050e10010b0a32";
 
 weatherForm.addEventListener("submit", event => {
 
+    event.preventDefault();
+
 })
 
 async function getWeatherData(city) {
